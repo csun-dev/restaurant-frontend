@@ -1,25 +1,50 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../css/components/header.css";
 import pizzaLogo from "../../../public/pizza.svg";
+import navTap from "../../../public/nav_tap.svg";
 
 const Header = () => {
-  const navigate = useNavigate();
   return (
     <header className="header">
-      <div className="header-tap">
+      <div className="header__nav--tap">
+        <img className="header__nav--logo" src={navTap} alt="Nav Tap SVG" />
+        <div>
+          <Link className="header__link--nav--tap" to="/">
+            Home
+          </Link>
+          <Link className="header__link--nav--tap" to="/menu">
+            Menu
+          </Link>
+          <Link className="header__link--nav--tap" to="/account/signin">
+            Sign in
+          </Link>
+          <Link className="header__link--nav--tap" to="/account/create">
+            Join now
+          </Link>
+        </div>
+      </div>
+      <Link className="header__link--main--logo" to="/">
         <img
-          onClick={() => navigate("/")}
-          className="logo"
+          className="header__logo--main"
           src={pizzaLogo}
           alt="Page Logo SVG"
         />
-        <div onClick={() => navigate("/")}>Home</div>
-        <div onClick={() => navigate("/menu")}>Menu</div>
+      </Link>
+      <div className="header__tap">
+        <Link className="header__tap--link" to="/">
+          Home
+        </Link>
+        <Link className="header__tap--link" to="/menu">
+          Menu
+        </Link>
       </div>
-
-      <div className="header-auth">
-        <div onClick={() => navigate("/account/signin")}>Sign in</div>
-        <div onClick={() => navigate("/account/create")}>Join now</div>
+      <div className="header__auth">
+        <Link className="header__auth--link" to="/account/signin">
+          Sign in
+        </Link>
+        <Link className="header__auth--link" to="/account/create">
+          Join now
+        </Link>
       </div>
     </header>
   );

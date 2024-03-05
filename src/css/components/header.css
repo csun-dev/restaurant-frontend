@@ -3,11 +3,12 @@
   box-shadow: 0px 1px 5px lightgrey;
   height: 100px;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-tap {
+.header__tap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,7 @@
   font-weight: 800;
 }
 
-.header-auth {
+.header__auth {
   display: flex;
   margin-right: 50px;
   gap: 30px;
@@ -25,7 +26,13 @@
   font-weight: 700;
 }
 
-.header-auth > div {
+.header__auth--link,
+.header__tap--link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__auth--link {
   width: 90px;
   height: 30px;
   border: 1px solid black;
@@ -35,18 +42,87 @@
   align-items: center;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.header__auth--link:hover {
+  background-color: lightgrey;
   cursor: pointer;
 }
 
-.header-tap > div:hover {
+.header__link--main--logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.header__logo--main {
+  width: 50px;
+  height: 50px;
+}
+
+.header__nav--tap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.header__nav--logo {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.header__tap--link:hover,
+.header__link--nav--tap:hover {
   color: green;
   cursor: pointer;
 }
 
-.header-auth > div:hover {
-  background-color: lightgrey;
-  cursor: pointer;
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+    height: 60px;
+  }
+
+  .header__nav--tap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .header__nav--tap:hover > div {
+    display: block;
+  }
+
+  .header__nav--tap > div {
+    display: none;
+    width: 100%;
+    margin-top: 200px;
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+
+  .header__nav--tap > div > .header__link--nav--tap:not(:first-child) {
+    border-top: 1px solid lightgrey;
+  }
+
+  .header__link--nav--tap {
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__tap,
+  .header__auth,
+  .header__tap > div,
+  .header__auth > div {
+    display: none;
+  }
 }
