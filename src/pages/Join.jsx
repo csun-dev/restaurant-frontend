@@ -1,12 +1,12 @@
 import Header from "./components/Header";
 
-const Home = () => {
+const Join = () => {
   return (
     <>
       <Header />
-      <h1>Home Content</h1>
+      <h1>Join Page</h1>
     </>
   );
 };
 
-export default Home;
+export default Join;

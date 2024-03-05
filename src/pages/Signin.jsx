@@ -1,12 +1,12 @@
 import Header from "./components/Header";
 
-const Home = () => {
+const SignIn = () => {
   return (
     <>
       <Header />
-      <h1>Home Content</h1>
+      <h1>Sign In Page</h1>
     </>
   );
 };
 
-export default Home;
+export default SignIn;

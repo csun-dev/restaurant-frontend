@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+
 const Menu = () => {
   return (
     <>
-      <h1>Menu</h1>
+      <Header />
+      <h1>Menu Content</h1>
     </>
   );
 };

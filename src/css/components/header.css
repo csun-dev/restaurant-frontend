@@ -1,0 +1,52 @@
+.header {
+  border-bottom: 0.5px solid whitesmoke;
+  box-shadow: 0px 1px 5px lightgrey;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-tap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  gap: 50px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header-auth {
+  display: flex;
+  margin-right: 50px;
+  gap: 30px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header-auth > div {
+  width: 90px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.header-tap > div:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.header-auth > div:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
