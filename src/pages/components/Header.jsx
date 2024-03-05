@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../css/components/header.css";
-import pizzaLogo from "../../../public/pizza.svg";
-import navTap from "../../../public/nav_tap.svg";
+import pizzaLogo from "/pizza.svg";
+import navTap from "/nav_tap.svg";
 
 const Header = () => {
   return (
