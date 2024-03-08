@@ -1,0 +1,51 @@
+/* Menu Styles */
+#menu {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+#pizza-heading,
+#salads-heading {
+    font-size: 2em;
+    color: #f74747;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 190px;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for background-color */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffcccc;
+
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.menu-item h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    color: #777;
+}
