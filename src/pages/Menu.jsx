@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import "../css/menu.css";
 
 function MenuItem({ name, description, price }) {
   return (
