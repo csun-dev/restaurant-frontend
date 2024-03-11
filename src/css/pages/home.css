@@ -1,0 +1,81 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.home__welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main-img {
+  width: 100%;
+  height: 443px;
+  object-fit: cover;
+}
+
+.home-welcome-txt {
+  color: #ffffff;
+  font-size: 75px;
+  font-family: "Times New Roman";
+  background-color: #1c2b07;
+  position: absolute;
+}
+
+.home_line--container {
+  width: 100%;
+  display: flex;
+}
+
+.home__content--format {
+  width: 50%;
+  height: 300px;
+  font-size: 50px;
+  text-align: center;
+  border: 15px double black;
+  text-transform: capitalize;
+}
+.home__hours--title {
+  font-size: 50px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.home__hours--locations {
+  display: block;
+  font-size: 25px;
+  font-family: "PT Sans";
+}
+
+.home__hours--location--wrapper {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.home-color-line {
+  top: 620px;
+  left: 0px;
+  right: 0px;
+  bottom: 1250px;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(28, 43, 7);
+}
+
+.home__image--format {
+  width: 50%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.home-not-sure {
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

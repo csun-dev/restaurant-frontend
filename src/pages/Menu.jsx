@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import "../css/menu.css";
+import "../css/pages/menu.css";
 
 function MenuItem({ name, description, price }) {
   return (
