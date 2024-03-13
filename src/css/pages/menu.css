@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 190px;
+    margin-bottom: 30px; /* Adjusted margin for consistency */
 }
 
 .menu-item {
@@ -29,7 +29,12 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     background-color: #ffcccc;
+}
 
+.menu-item:hover h3,
+.menu-item:hover p {
+    color: #f74747; /* Change text color on hover */
+    transition: color 0.3s ease; /* Add transition for text color change */
 }
 
 .menu-item img {
@@ -49,3 +54,4 @@
     font-size: 1.1em;
     color: #777;
 }
+
