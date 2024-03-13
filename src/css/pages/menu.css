@@ -1,40 +1,48 @@
 /* Menu Styles */
 #menu {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0; /* Decrease top padding to move "Our Menu" closer to the top */
     background-color: #f0f0f0;
 }
 
+#menu h2 {
+    font-size: 2.5em; /* Increase size for "Our Menu" */
+    color: #333;
+    margin-bottom: 10px; /* Add margin to create space between "Our Menu" and categories */
+}
+
 #pizza-heading,
-#salads-heading {
-    font-size: 2em;
+#salads-heading,
+#drinks-heading {
+    font-size: 1.5em; /* Increase size for category headings */
     color: #f74747;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin to create space between category headings */
 }
 
 .menu-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 30px; /* Adjusted margin for consistency */
+    margin-bottom: 30px;
 }
 
 .menu-item {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for background-color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Refine transition */
 }
 
 .menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px) scale(1.05); /* Adjust scale on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     background-color: #ffcccc;
 }
 
 .menu-item:hover h3,
 .menu-item:hover p {
     color: #f74747; /* Change text color on hover */
-    transition: color 0.3s ease; /* Add transition for text color change */
 }
 
 .menu-item img {
