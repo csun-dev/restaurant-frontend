@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import React, { useState } from "react";
 import "../css/pages/join.css";
 
-const SignUp = () => {
+const Join = () => {
 
   return (
     <>
@@ -48,4 +48,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp;
+export default Join;
