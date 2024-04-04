@@ -1,6 +1,5 @@
-
-/*The Matador Rewards Header*/
-.sub-header{
+/* The Matador Rewards Header */
+.signUp-join-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,42 +7,42 @@
     margin-top: 30px;
 }
 
-/*Text in the rewards header*/
-.text{
+/* Text in the rewards header */
+.signUp-text {
     color: white;
     font-size: 49px;
     font-weight: 700;
 }
 
-/*The underline under the Matador Rewards*/
-.underline{
+/* The underline under the Matador Rewards */
+.signUp-underline {
     width: 150px;
     height: 3px;
     background-color: green;
     border-radius: 6px;
 }
 
-/*The box around the log-in questions*/
-.container{
+/* The box around the log-in questions */
+.signUp-join-container {
     height: 800px;
     width: 700px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    margin:auto;
+    margin: auto;
     margin-top: 100px;
     background: rgb(99, 153, 99);
     padding-bottom: 30px;
     border-radius: 25px;
 }
 
-.inputs{
+.signUp-join-inputs {
     margin-top: 55px;
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 
-.input{
+.signUp-join-input {
     display: flex;
     align-items: center;
     margin: auto;
@@ -53,8 +52,8 @@
     border-radius: 6px;
 }
 
-.input input{
-    height:50px;
+.signUp-input input {
+    height: 50px;
     width: 400px;
     background: transparent;
     border: none;
@@ -63,7 +62,7 @@
     font-size: 19px;
 }
 
-.alr-have{
+.signUp-alr-have {
     padding-left: 62px;
     margin-top: 27px;
     color: white;
@@ -71,50 +70,49 @@
     transform: translateX(23%);
 }
 
-.alr-have span{
-    color:rgb(72, 71, 71);
+.signUp-alr-have span {
+    color: rgb(72, 71, 71);
     cursor: pointer;
 }
 
-.agreement-checkbox {
+.signUp-agreement-checkbox {
     margin: 20px 32%;
     margin-top: 30px;
-    display: flex; 
+    display: flex;
     align-items: center;
-    color:white;
-  }
-  
-  .agreement-checkbox input[type="checkbox"] {
-    margin-right: 10px; 
-  }
-  
-  .agreement-checkbox label {
-    font-size: 0.9em;
-  }
+    color: white;
+}
 
-  .text-checkbox {
+.signUp-agreement-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.signUp-agreement-checkbox label {
+    font-size: 0.9em;
+}
+
+.signUp-text-checkbox {
     margin: 20px 32%;
-    display: flex; 
+    display: flex;
     align-items: center;
-    color:white;
-  }
-  
-  .text-checkbox input[type="checkbox"] {
-    margin-right: 10px; 
-  }
-  
-  .text-checkbox label {
+    color: white;
+}
+
+.signUp-text-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.signUp-text-checkbox label {
     font-size: 0.9em;
-  }
+}
 
-
-.join{
+.signUp-join {
     display: flex;
     gap: 30px;
     margin: 20px auto;
 }
 
-.joinBut{
+.signUp-joinBut {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,27 +126,14 @@
     cursor: pointer;
 }
 
-.person{
+.signUp-person,
+.signUp-email,
+.signUp-password1,
+.signUp-password2 {
     width: 25px;
     height: 25px;
 }
 
-.email{
-    width: 25px;
-    height: 25px;
-}
-
-.password1{
-    width: 25px;
-    height: 25px;
-}
-
-.password2{
-    width: 25px;
-    height: 25px;
-}
-
-.input img{
+.signUp-input img {
     margin: 0px 30px;
 }
-
