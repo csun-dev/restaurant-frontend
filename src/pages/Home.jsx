@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import "../css/pages/home.css";
+import mainimg from "../images/matadorslice.png";
+import toppizza from "../images/toppizzas.png";
 
 const Home = () => {
   return (
@@ -8,7 +10,7 @@ const Home = () => {
       <div className="home-container">
         <div className="home__welcome">
           <img
-            src="https://insanelygoodrecipes.com/wp-content/uploads/2023/01/Healthy-Homemade-Spinach-Pizza-with-Cheese.jpg"
+            src={mainimg}
             className="home-main-img"
           />
           <span className="home-welcome-txt">Welcome to CSUN Pizzeria</span>
@@ -36,12 +38,22 @@ const Home = () => {
         </div>
         <div className="home_line--container">
           <img
-            alt="image"
-            src="https://media.istockphoto.com/id/1313418058/photo/vegetarian-dishes.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=Xi3-TTVD0xH3K4Vuf24-Kp_NAaBmLgLMUyYbcomECxg="
+            src={toppizza}
             className="home__image--format"
           />
           <div className="home__content--format">
-            <span className="home-not-sure">Not sure what to put here</span>
+            <span className="home-top-picks--title">Top 3 Pizzas</span>
+            <div className="home-top-picks--wrapper">
+              <span className="home-top-picks--details">
+                Left - Magherita Pizza
+               </span>
+              <span className="home-top-picks--details">
+                Middle - Hawaiian Pizza
+               </span>
+               <span className="home-top-picks--details">
+                Right - Pepperoni Pizza
+               </span>
+            </div>
           </div>
         </div>
       </div>
