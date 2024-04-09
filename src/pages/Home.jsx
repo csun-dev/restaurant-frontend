@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import "../css/pages/home.css";
 import mainimg from "../images/matadorslice.png";
 import toppizza from "../images/toppizzas.png";
+import pizzaplace from "../images/pizzaplace.png";
 
 const Home = () => {
   return (
@@ -31,8 +32,7 @@ const Home = () => {
             </div>
           </div>
           <img
-            alt="image"
-            src="https://www.medibank.com.au/content/dam/livebetter/en/images/migrated/41f5d31634e6a83e2895afe1aca7003d/how-to-make-better-pizza.jpg"
+            src={pizzaplace}
             className="home__image--format"
           />
         </div>
