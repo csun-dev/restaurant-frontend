@@ -1,5 +1,5 @@
 /* The Matador Rewards Header */
-.signUp-join-header {
+.signup-join-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,14 +8,14 @@
 }
 
 /* Text in the rewards header */
-.signUp-text {
+.signup-text {
     color: white;
     font-size: 49px;
     font-weight: 700;
 }
 
 /* The underline under the Matador Rewards */
-.signUp-underline {
+.signup-underline {
     width: 150px;
     height: 3px;
     background-color: green;
@@ -23,7 +23,7 @@
 }
 
 /* The box around the log-in questions */
-.signUp-join-container {
+.signup-join-container {
     height: 800px;
     width: 700px;
     display: flex;
@@ -35,14 +35,14 @@
     border-radius: 25px;
 }
 
-.signUp-join-inputs {
+.signup-join-inputs {
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.signUp-join-input {
+.signup-join-input {
     display: flex;
     align-items: center;
     margin: auto;
@@ -52,7 +52,7 @@
     border-radius: 6px;
 }
 
-.signUp-input input {
+.signup-input input {
     height: 50px;
     width: 400px;
     background: transparent;
@@ -62,7 +62,7 @@
     font-size: 19px;
 }
 
-.signUp-alr-have {
+.signup-alr-have {
     padding-left: 62px;
     margin-top: 27px;
     color: white;
@@ -70,12 +70,12 @@
     transform: translateX(23%);
 }
 
-.signUp-alr-have span {
+.signup-alr-have span {
     color: rgb(72, 71, 71);
     cursor: pointer;
 }
 
-.signUp-agreement-checkbox {
+.signup-agreement-checkbox {
     margin: 20px 32%;
     margin-top: 30px;
     display: flex;
@@ -83,36 +83,36 @@
     color: white;
 }
 
-.signUp-agreement-checkbox input[type="checkbox"] {
+.signup-agreement-checkbox input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.signUp-agreement-checkbox label {
+.signup-agreement-checkbox label {
     font-size: 0.9em;
 }
 
-.signUp-text-checkbox {
+.signup-text-checkbox {
     margin: 20px 32%;
     display: flex;
     align-items: center;
     color: white;
 }
 
-.signUp-text-checkbox input[type="checkbox"] {
+.signup-text-checkbox input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.signUp-text-checkbox label {
+.signup-text-checkbox label {
     font-size: 0.9em;
 }
 
-.signUp-join {
+.signup-join {
     display: flex;
     gap: 30px;
     margin: 20px auto;
 }
 
-.signUp-joinBut {
+.signup-joinBut {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,14 +126,14 @@
     cursor: pointer;
 }
 
-.signUp-person,
-.signUp-email,
-.signUp-password1,
-.signUp-password2 {
+.signup-person,
+.signup-email,
+.signup-password1,
+.signup-password2 {
     width: 25px;
     height: 25px;
 }
 
-.signUp-input img {
+.signup-input img {
     margin: 0px 30px;
 }
