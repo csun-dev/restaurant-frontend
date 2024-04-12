@@ -43,6 +43,7 @@ const Join = () => {
           <div className="joinBut">Join Now!</div>
         </div>
       </div>
+
     </>
   )
 }
