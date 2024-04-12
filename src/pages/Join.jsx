@@ -7,7 +7,7 @@ const Join = () => {
   return (
     <>
       <Header />
-      <div className='container'>
+      <div className='join-box'>
         <div className="sub-header">
           <div className="text">Join Matador Rewards!</div>
           <div className="underline"></div>
