@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../css/pages/login.css";
+import "../css/pages/auth.css";
 import axios from "axios";
 
 const SignIn = () => {
-  const [input, setValues] = useState({
+  const [values, setValues] = useState({
     email: "",
     password: "",
   });
@@ -13,43 +13,58 @@ const SignIn = () => {
   const navigate = useNavigate();
 
   axios.defaults.withCredentials = true;
-  const submit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/user/login", input)
+      .post("http://localhost:8000/user/login/", values)
       .then((res) => {
         if (res.data.message === "Success") {
           navigate("/");
+        } else {
+          alert("Hey!");
         }
       })
+      .catch((err) => console.log(err));
   };
   return (
     <>
       <Header />
-      <section>
-        <div className="form-box">
-            <div className="form-value">
-                <form onSubmit = {submit}>
-                    <h2>Sign in</h2>
-                    <div className="inputbox">
-                        <input type="email" onChange={(e) => setValues({ ...input, email: e.target.value })} required />
-                        <label for="">Email address</label>
-                    </div>
-                    <div className="inputbox">
-                        <input type="password" onChange={(e) => setValues({ ...input, password: e.target.value })} required/>
-                        <label for="">Password</label>
-                    </div>
-                    <div className="forget">
-                        <label for=""><a href="#">Forgot Password</a></label>
-                    </div>
-                    <button type = "submit" >Sign in</button>
-                    <div class="register">
-                        <p>No account? <a href="#">Join now</a></p>
-                    </div>
-                </form>
-            </div>
+      <div className="main-default">
+        <h2 className="form-header-default">Sign In</h2>
+        <form className="form-container-default" onSubmit={handleSubmit}>
+          <div className="form-box-default">
+            <label>Email:</label>
+            <input
+              className="input-form-default"
+              type="email"
+              onChange={(e) => setValues({ ...values, email: e.target.value })}
+              required
+            />
+          </div>
+          <div className="form-box-default">
+            <label>Password:</label>
+            <input
+              className="input-form-default"
+              type="password"
+              onChange={(e) =>
+                setValues({ ...values, password: e.target.value })
+              }
+              required
+            />
+          </div>
+          <button className="Botton-default" type="submit">
+            Login
+          </button>
+        </form>
+        <div className="links-container-default ">
+          <div className="links-default">
+            <h3>Don't have an account?</h3>
+            <Link className="Link-default" to={"/account/create"}>
+              Signup Now
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

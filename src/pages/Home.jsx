@@ -10,10 +10,7 @@ const Home = () => {
       <Header />
       <div className="home-container">
         <div className="home__welcome">
-          <img
-            src={mainimg}
-            className="home-main-img"
-          />
+          <img src={mainimg} className="home-main-img" />
           <span className="home-welcome-txt">Welcome to CSUN Pizzeria</span>
         </div>
         <div className="home_line--container">
@@ -31,28 +28,22 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <img
-            src={pizzaplace}
-            className="home__image--format"
-          />
+          <img src={pizzaplace} className="home__image--format" />
         </div>
         <div className="home_line--container">
-          <img
-            src={toppizza}
-            className="home__image--format"
-          />
+          <img src={toppizza} className="home__image--format" />
           <div className="home__content--format">
             <span className="home-top-picks--title">Top 3 Pizzas</span>
             <div className="home-top-picks--wrapper">
               <span className="home-top-picks--details">
                 Left - Magherita Pizza
-               </span>
+              </span>
               <span className="home-top-picks--details">
                 Middle - Hawaiian Pizza
-               </span>
-               <span className="home-top-picks--details">
+              </span>
+              <span className="home-top-picks--details">
                 Right - Pepperoni Pizza
-               </span>
+              </span>
             </div>
           </div>
         </div>
