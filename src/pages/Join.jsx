@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import React, { useState } from "react";
 import "../css/pages/join.css";
+import Footer from "./components/Footer";
 
 const Join = () => {
 
@@ -43,7 +44,7 @@ const Join = () => {
           <div className="joinBut">Join Now!</div>
         </div>
       </div>
-
+      <Footer/>
     </>
   )
 }

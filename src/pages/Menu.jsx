@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import Header from "./components/Header";
 import "../css/pages/menu.css";
+import Footer from "./components/Footer";
 
 function MenuItem({ name, description, price, image }) {
   return (
@@ -155,6 +156,7 @@ function Menu() {
             ))}
           </div>
         </section>
+        <Footer/>
       </>
   );
 }

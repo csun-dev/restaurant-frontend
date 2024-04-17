@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "../css/pages/home.css";
 import mainimg from "../images/matadorslice.png";
 import toppizza from "../images/toppizzas.png";
@@ -57,6 +58,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

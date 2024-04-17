@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/pages/login.css";
 import axios from "axios";
+import Footer from "./components/Footer";
 
 const SignIn = () => {
   const [input, setValues] = useState({
@@ -50,6 +51,7 @@ const SignIn = () => {
             </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
