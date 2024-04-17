@@ -1,52 +1,91 @@
-import Header from "./components/Header";
-import React, { useState } from "react";
-import "../css/pages/join.css";
+import Header from "./components/Header
 import Footer from "./components/Footer";
+import React, { useState } from "react";
+import "../css/pages/auth.css";
+import "../css/pages/join.css";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Join = () => {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const navigate = useNavigate();
+
+  axios.defaults.withCredentials = true;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:8000/user/signup/", values)
+      .then((res) => {
+        if (res.data.message === "Success") {
+          navigate("/account/signin");
+        } else {
+          alert("Something went wrong!");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <>
       <Header />
-      <div className='join-box'>
-        <div className="sub-header">
-          <div className="text">Join Matador Rewards!</div>
-          <div className="underline"></div>
-        </div>
-        <div className="inputs">
-          <div className="input">
-            <img className="person" src="https://icons.veryicon.com/png/o/internet--web/website-blog-utility-icon/personal-center-human-shape.png" alt="" />
-            <input type="text" placeholder="Name" />
+      <div className="main-default main-box-lg">
+        <h2 className="form-header-default">Create account</h2>
+        <form
+          className="form-container-default Fornm-container"
+          onSubmit={handleSubmit}
+        >
+          <div className="form-box-default">
+            <label>Username:</label>
+            <input
+              className="input-form-default"
+              type="text"
+              onChange={(e) =>
+                setValues({ ...values, username: e.target.value })
+              }
+              required
+            />
           </div>
-          <div className="input">
-            <img className="email" src="https://cdn.iconscout.com/icon/free/png-256/free-email-2026367-1713640.png" alt="" />
-            <input type="email" placeholder="Email" />
+          <div className="form-box-default">
+            <label>Email:</label>
+            <input
+              className="input-form-default"
+              type="email"
+              onChange={(e) => setValues({ ...values, email: e.target.value })}
+              required
+            />
           </div>
-          <div className="input">
-            <img className="password1" src="https://icons.veryicon.com/png/o/internet--web/sesame-treasure/login-password-3.png" alt="" />
-            <input type="password" placeholder="Password" />
+          <div className="form-box-default">
+            <label>Password:</label>
+            <input
+              className="input-form-default"
+              type="password"
+              onChange={(e) =>
+                setValues({ ...values, password: e.target.value })
+              }
+              required
+            />
           </div>
-          <div className="input">
-            <img className="password2" src="https://icons.veryicon.com/png/o/internet--web/sesame-treasure/login-password-3.png" alt="" />
-            <input type="password" placeholder="Confirm Password" />
+          <button className="Botton-default" type="submit">
+            Signup
+          </button>
+        </form>
+        <div className="links-container-default">
+          <div className="links-default">
+            <h3>Already have an account?</h3>
+            <Link className="Link-default" to={"/account/signin"}>
+              Login Now
+            </Link>
           </div>
-        </div>
-        <div className="alr-have">Already have an account?<span> Click Here!</span></div>
-        <div className="agreement-checkbox">
-          <input type="checkbox" id="agreeToTerms" required />
-          <label htmlFor="agreeToTerms">I agree to the Terms and Conditions</label>
-        </div>
-        <div className="text-checkbox">
-          <input type="checkbox" id="text" required />
-          <label htmlFor="text">Recieve text offers and promotions?</label>
-        </div>
-        <div className="join">
-          <div className="joinBut">Join Now!</div>
         </div>
       </div>
       <Footer/>
     </>
-  )
-}
+  );
+};
 
 export default Join;
