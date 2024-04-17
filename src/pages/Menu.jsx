@@ -5,7 +5,6 @@ import "../css/pages/menu.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
 function MenuItem({ name, description, price, image }) {
   return (
     <motion.div className="menu-item" whileHover={{ scale: 1.1 }}>
@@ -211,6 +210,7 @@ function Menu() {
           ))}
         </div>
       </section>
+      <Footer />
     </>
   );
 }
