@@ -1,0 +1,133 @@
+.footer{
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 10px 0 10px;
+    line-height: 24px;
+    color: #000000;
+    display: inline-block;
+    font-family: "PT sanns", sans-serif;
+    border-top: 5px solid rgba(128, 128, 128, 0.39);
+}
+.container-main  a{
+    color: gray;
+    text-decoration: none;
+}
+.container-main  a:hover{
+    color: black;
+    text-decoration: none;
+}
+.container-main{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px rgb(94, 94, 94);
+}
+.about {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+.about h6{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.about p{
+    padding-left: 20px;
+}
+
+.locations {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    padding-right: 20px;
+}
+.locations h6{
+    font-weight: bold;
+}
+.quick-links{
+    width: 10%;
+    padding-right: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.quick-links h6{
+    font-weight: bold;
+}
+
+
+
+.container-bot{
+    border-top: 2px solid RGB(#3E3E3F);
+    box-shadow: 0px 0.5px 3px rgb(43, 43, 43);
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright{
+    padding-left: 20px;
+    padding-right: 20px;
+    gap:100px;
+}
+.social-icons-class{
+    margin-left: auto;
+    display: inline-flex;
+    padding-right: 20px;
+
+    
+}
+
+.social-icons li {
+    display: inline-flex;
+    margin-bottom: 4px;
+}
+.social-icons a {
+    background-color: #474747;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-flex;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.social-icons.size-sm a {
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    font-size: 14px;
+}
+.fbIMG {
+    display: block;
+    margin: 6px auto;
+}
+.twitIMG {
+    display: block;
+    margin: 6px auto;
+}
+.instaIMG {
+    display: block;
+    margin: 6px auto;
+}
+.linkIMG {
+    display: block;
+    margin: 6px auto;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+.social-icons a.instagram:hover {
+    background-color: #b60000;
+}

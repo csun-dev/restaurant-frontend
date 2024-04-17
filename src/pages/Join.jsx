@@ -1,4 +1,5 @@
-import Header from "./components/Header";
+import Header from "./components/Header
+import Footer from "./components/Footer";
 import React, { useState } from "react";
 import "../css/pages/auth.css";
 import "../css/pages/join.css";
@@ -82,6 +83,7 @@ const Join = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

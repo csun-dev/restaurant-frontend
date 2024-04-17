@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "../css/pages/menu.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 
 function MenuItem({ name, description, price, image }) {
   return (
@@ -187,6 +189,9 @@ function Menu() {
               </div>
             ))}
           </div>
+        </section>
+        <Footer/>
+      </>
         ) : (
           <p>Loading menu...</p>
         )}
