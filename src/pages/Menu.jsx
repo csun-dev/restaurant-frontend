@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "../css/pages/menu.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -7,11 +8,13 @@ import axios from "axios";
 function MenuItem({ name, description, price, image_url }) {
   return (
     <motion.div className="menu-item" whileHover={{ scale: 1.1 }}>
-      <img src={image_url} alt={name} />
+      <img className="menu-image" src={image_url} alt={name} />
       <div>
-        <h3>{name}</h3>
-        <p>{description}</p>
-        <span>{price}</span>
+        <div className="menu-name">{name}</div>
+        <div className="menu-detail__format">
+          <div className="menu-description">{description}</div>
+          <div className="menu-price">${price}</div>
+        </div>
       </div>
     </motion.div>
   );
@@ -36,6 +39,7 @@ function Menu() {
   return (
     <>
       <Header />
+      <div className="menu-page-title">Menus</div>
       {menus.length ? (
         <div className="menu-wrapper">
           {menus.map((item) => (
@@ -47,6 +51,7 @@ function Menu() {
       ) : (
         <p>Loading menu...</p>
       )}
+      <Footer />
     </>
   );
 }
