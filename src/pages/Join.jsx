@@ -1,4 +1,4 @@
-import Header from "./components/Header
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import React, { useState } from "react";
 import "../css/pages/auth.css";
@@ -33,57 +33,61 @@ const Join = () => {
   return (
     <>
       <Header />
-      <div className="main-default main-box-lg">
-        <h2 className="form-header-default">Create account</h2>
-        <form
-          className="form-container-default Fornm-container"
-          onSubmit={handleSubmit}
-        >
-          <div className="form-box-default">
-            <label>Username:</label>
-            <input
-              className="input-form-default"
-              type="text"
-              onChange={(e) =>
-                setValues({ ...values, username: e.target.value })
-              }
-              required
-            />
-          </div>
-          <div className="form-box-default">
-            <label>Email:</label>
-            <input
-              className="input-form-default"
-              type="email"
-              onChange={(e) => setValues({ ...values, email: e.target.value })}
-              required
-            />
-          </div>
-          <div className="form-box-default">
-            <label>Password:</label>
-            <input
-              className="input-form-default"
-              type="password"
-              onChange={(e) =>
-                setValues({ ...values, password: e.target.value })
-              }
-              required
-            />
-          </div>
-          <button className="Botton-default" type="submit">
-            Signup
-          </button>
-        </form>
-        <div className="links-container-default">
-          <div className="links-default">
-            <h3>Already have an account?</h3>
-            <Link className="Link-default" to={"/account/signin"}>
-              Login Now
-            </Link>
+      <div className="willy">
+        <div className="main-default main-box-lg">
+          <h2 className="form-header-default">Create account</h2>
+          <form
+            className="form-container-default Fornm-container"
+            onSubmit={handleSubmit}
+          >
+            <div className="form-box-default">
+              <label>Username:</label>
+              <input
+                className="input-form-default"
+                type="text"
+                onChange={(e) =>
+                  setValues({ ...values, username: e.target.value })
+                }
+                required
+              />
+            </div>
+            <div className="form-box-default">
+              <label>Email:</label>
+              <input
+                className="input-form-default"
+                type="email"
+                onChange={(e) =>
+                  setValues({ ...values, email: e.target.value })
+                }
+                required
+              />
+            </div>
+            <div className="form-box-default">
+              <label>Password:</label>
+              <input
+                className="input-form-default"
+                type="password"
+                onChange={(e) =>
+                  setValues({ ...values, password: e.target.value })
+                }
+                required
+              />
+            </div>
+            <button className="Botton-default" type="submit">
+              Signup
+            </button>
+          </form>
+          <div className="links-container-default">
+            <div className="links-default">
+              <h3>Already have an account?</h3>
+              <Link className="Link-default" to={"/account/signin"}>
+                Login Now
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <Footer/>
+        </div>
+      <Footer />
     </>
   );
 };

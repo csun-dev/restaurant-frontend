@@ -30,6 +30,7 @@ const SignIn = () => {
   return (
     <>
       <Header />
+      <div className="willy">
       <div className="main-default">
         <h2 className="form-header-default">Sign In</h2>
         <form className="form-container-default" onSubmit={handleSubmit}>
@@ -65,9 +66,9 @@ const SignIn = () => {
             </Link>
           </div>
         </div>
-      </section>
-      <Footer/>
       </div>
+      </div>
+      <Footer/>
     </>
   );
 };
