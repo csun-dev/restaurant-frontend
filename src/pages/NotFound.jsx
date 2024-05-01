@@ -18,6 +18,7 @@ function NotFound() {
         404 - Not Found
       </h1>
       <Footer/>
+      <Footer />
     </>
   );
 }

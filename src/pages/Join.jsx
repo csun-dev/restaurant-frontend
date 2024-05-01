@@ -40,6 +40,10 @@ const Join = () => {
             className="form-container-default Fornm-container"
             onSubmit={handleSubmit}
           >
+      <div className="main-container">
+        <div className="main-default main-box-lg">
+          <h2 className="form-header-default">Create account</h2>
+          <form className="form-container-default" onSubmit={handleSubmit}>
             <div className="form-box-default">
               <label>Username:</label>
               <input
@@ -74,6 +78,7 @@ const Join = () => {
               />
             </div>
             <button className="Botton-default" type="submit">
+            <button className="button-default" type="submit">
               Signup
             </button>
           </form>
@@ -81,12 +86,14 @@ const Join = () => {
             <div className="links-default">
               <h3>Already have an account?</h3>
               <Link className="Link-default" to={"/account/signin"}>
+              <Link className="link-default" to={"/account/signin"}>
                 Login Now
               </Link>
             </div>
           </div>
         </div>
         </div>
+      </div>
       <Footer />
     </>
   );

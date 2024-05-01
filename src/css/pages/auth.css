@@ -1,4 +1,5 @@
 
+
 .willy{
   margin-top: 200px;
   height: 100vh;
@@ -9,13 +10,22 @@
   margin-left: 5px;
   display: block;
 }
-
-.Link-default:hover {
-  color: red;
-  font-weight: 600;
+.main-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Botton-default {
+.main-default {
+  text-align: center;
+  width: min-content;
+  height: 400px;
+  border-radius: 25px;
+  border: 0.1px solid lightgrey;
+}
+
+.button-default {
   width: 120px;
   height: 40px;
   border-radius: 10px;
@@ -23,7 +33,7 @@
   color: black;
 }
 
-.Botton-default:hover {
+.button-default:hover {
   background-color: lightgrey;
   cursor: pointer;
 }
@@ -37,7 +47,6 @@
   border-radius: 25px;
   border: 0.1px solid lightgrey;
 }
-
 .content-default {
   height: 100%;
   width: 100%;
@@ -48,8 +57,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  position: absolute;
-  bottom: 5%;
+  margin-top: 30px;
 }
 
 .links-default {
@@ -89,4 +97,15 @@
   font-size: 20px;
   border: solid gray 0.8px;
   border-radius: 10px;
+}
+
+.link-default {
+  text-decoration: none;
+  color: darkgrey;
+  margin-left: 5px;
+}
+
+.link-default:hover {
+  color: red;
+  font-weight: 600;
 }
