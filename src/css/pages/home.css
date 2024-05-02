@@ -88,3 +88,23 @@
   justify-content: space-between;
   margin-top: 40px;
 }
+
+@media (max-width: 750px) {
+  .home_line--container {
+    flex-direction: column;
+  }
+
+  .home__content--format {
+    width: 100%;
+  }
+
+  .home__image--format {
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+  .home__hours--locations {
+    font-size: 18px;
+  }
+}
