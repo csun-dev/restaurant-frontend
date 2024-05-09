@@ -1,10 +1,10 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import axios from "axios";
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../css/pages/auth.css";
 import "../css/pages/join.css";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const Join = () => {
   const [values, setValues] = useState({
@@ -22,12 +22,15 @@ const Join = () => {
       .post("http://localhost:8000/user/signup/", values)
       .then((res) => {
         if (res.data.message === "Success") {
+          alert("Welcome!");
           navigate("/account/signin");
         } else {
           alert("Something went wrong!");
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        alert("Something went wrong!");
+      });
   };
 
   return (

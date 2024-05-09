@@ -1,9 +1,9 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/pages/auth.css";
-import axios from "axios";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const SignIn = () => {
   const [values, setValues] = useState({
@@ -20,6 +20,7 @@ const SignIn = () => {
       .post("http://localhost:8000/user/login/", values)
       .then((res) => {
         if (res.data.message === "Success") {
+          alert("Welcome!");
           navigate("/");
         } else {
           alert("Hey!");
